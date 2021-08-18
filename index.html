@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Sik-K</title>
+        <link rel="shortcut icon" type="image/x-icon" href="./images/yamma.ico">
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Andada+Pro:wght@500&display=swap');
+        </style>
+        <script src="https://kit.fontawesome.com/25c2514e6b.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- 상단 바 만들기 -->
+        <nav class="navbar">
+            <div class="navbar_menu">
+                <div class="navbar_toggleBtn"><i class="fas fa-bars"></i></div>
+            </div>
+
+            <div class="navbar_name">
+                <a>Sik-K</a>
+            </div>
+
+            <ul class="navbar_icons">
+                <li class="icon_soundCld"><i class="fab fa-soundcloud"></i></li>
+                <li class="icon_twitter"><i class="fab fa-twitter"></i></li>
+                <li class="icon_instagram"><i class="fab fa-instagram"></i></li>
+                <li class="icon_facebook"><i class="fab fa-facebook"></i></li>
+            </ul>
+        </nav>
+
+        <nav class="downbar">
+            <ul class="downbar_All">
+                <li class="down" id="down-1">introduce</li>
+                <li class="down" id="down-2">Songs</li>
+                <li class="down" id="down-3">Albums</li>
+                <li class="down" id="down-4">News</li>
+                <li class="down" id="down-5">Developer</li>
+            </ul>
+
+        </nav>
+
+        <div id="IntroMenu" style="cursor: pointer;">
+            <div id="menu-intro" class="MenuBox" onclick="location.href='./src/introduce.html';">Introduce</div>
+            <div id="menu-artist" class="MenuBox" onclick="location.href='./src/artist.html';">Artists</div>
+            <div id="menu-news" class="MenuBox" onclick="location.href='./src/news.html';">News</div>
+            <div id="menu-dev" class="MenuBox" onclick="location.href='./src/Developer.html';">Developer</div>
+        </div>
+        <div class="devInfo">
+            Developer: Jang Seo Ryeong, Tel: fallinta2@gmail.com <br>
+            Copyright 2021.Jang Seo Ryeong All rights reserved.
+        </div>
+        <script src="./main.js"></script>
+    </body>
+</html>
