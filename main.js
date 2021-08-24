@@ -5,14 +5,15 @@
     const iconTwitter= document.querySelector('.icon_twitter');
     const iconInstagram = document.querySelector('.icon_instagram');
     const iconFacebook = document.querySelector('.icon_facebook');
+    const iconYoutube = document.querySelector('.icon_youtube');
 
     downToggleBtn.addEventListener('click', () => {
         downBar.classList.toggle('active');
     });
 
-    iconSoundCld.addEventListener('click', () => {
-        window.open('https://soundcloud.com/younghotyellow');
-    });
+    // iconSoundCld.addEventListener('click', () => {
+    //     window.open('https://soundcloud.com/younghotyellow');
+    // });
 
     iconTwitter.addEventListener('click', () => {
         window.open('https://twitter.com/younghotyellow');

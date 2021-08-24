@@ -7,3 +7,8 @@ h1 {
 h2 {
     font-family: 'Andada Pro', serif;
 }
+
+.youtubeBox {
+    display: flex;
+    padding: 10px;
+}

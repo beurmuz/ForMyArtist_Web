@@ -47,7 +47,8 @@ a:visited { color: white; }
 .icon_soundCld:hover, 
 .icon_twitter:hover, 
 .icon_instagram:hover,
-.icon_facebook:hover {
+.icon_facebook:hover,
+.icon_youtube:hover {
     cursor: pointer;
 }
 
