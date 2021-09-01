@@ -33,3 +33,15 @@ h1 {
 .box-3 { 
     background-color: rgb(233, 145, 174);
 }
+
+
+#theme {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-family: 'Andada', serif;
+    font-size: 15px;
+}
+#themeColor {
+    font-family: 'Andada', serif;
+}

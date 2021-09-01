@@ -10,5 +10,10 @@ h2 {
 
 .youtubeBox {
     display: flex;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white;
+    justify-content: center;
     padding: 10px;
 }
+
