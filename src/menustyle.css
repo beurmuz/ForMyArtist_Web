@@ -50,9 +50,39 @@ h1 {
     border-top: 2px solid white;
 }
 
-.newsBox {
+.introBox {
     font-family: 'Nanum Gothic', sans-serif;
     font-size: 12px;
     line-height: 30px;
     padding: 50px;
+    width: 50vw;
+}
+
+h2 {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.imgCtnt {
+    width: 50vw;
+    height: auto;
+}
+
+.profileBox {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+@media screen and (max-width: 780px) {
+    .profileBox {
+        flex-direction: column;
+    }
+
+    .imgCtnt {
+        width: 100%;
+    }
+
+    .introBox {
+        width: 100%;
+        padding: 5px;
+    }
 }
