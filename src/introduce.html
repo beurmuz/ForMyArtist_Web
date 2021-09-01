@@ -6,6 +6,7 @@
         <link rel="shortcut icon" type="image/x-icon" href="./images/yamma.ico">
         <link rel="stylesheet" type="text/css" href="../style.css">
         <link rel="stylesheet" type="text/css" href="./css/menu.css">
+        <link rel="stylesheet" type="text/css" href="./menustyle.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,8 +14,8 @@
         <script src="https://kit.fontawesome.com/25c2514e6b.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <!-- 상단 바 구현 -->
-        <nav class="navbar">
+         <!-- 상단 바 구현 -->
+         <nav class="navbar">
             <div class="navbar_menu">
                 <div class="navbar_toggleBtn"><i class="fas fa-bars"></i></div>
             </div>
@@ -24,11 +25,10 @@
             </div>
 
             <ul class="navbar_icons">
-                <li class="icon_soundCld"><a href="https://soundcloud.com/younghotyellow" target="_blank"><i class="fab fa-soundcloud"></i></a></i></li>
-                <li class="icon_twitter"><i class="fab fa-twitter"></i></li>
-                <li class="icon_instagram"><i class="fab fa-instagram"></i></li>
-                <li class="icon_facebook"><i class="fab fa-facebook"></i></li>
-                <li class="icon_youtube"><i class="fab fa-youtube"></i></li>
+                <li class="icon_soundCld"><a href="https://soundcloud.com/younghotyellow" target="_blank"><i class="fab fa-soundcloud"></i></a></li>
+                <li class="icon_twitter"><a href="https://twitter.com/younghotyellow" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li class="icon_instagram"><a href="https://instagram.com/younghotyellow94" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li class="icon_youtube"><a href="https://www.youtube.com/watch?v=YKdZvLaqEOk&list=PLN2__r66ZoiszUc56AK7ROH-YCWcXyxQB" target="_blank"><i class="fab fa-youtube"></i></a></li>
             </ul>
         </nav>
         <!-- 토글 클릭 시 메뉴 -->
@@ -37,17 +37,23 @@
                 <li class="down" id="down-1"><a href="./introduce.html">Introduce</a></li>
                 <li class="down" id="down-2"><a href="./songs.html">Songs</a></li>
                 <li class="down" id="down-3"><a href="./albums.html">Albums</a></li>
-                <li class="down" id="down-4"><a href="./news.html">News</a></li>
+                <li class="down" id="down-4"><a href="./videoPage.html">Video</a></li>
             </ul>
         </nav>
-        <div class="youtubeBox">
-                <iframe width="600" height="355" src="https://www.youtube.com/embed/12OVlVX2EWA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
-        </div>
-
-        <!-- <div class="devInfo">
-            Developer: Jang Seo Ryeong, Email: fallinta2@gmail.com <br>
-            Copyright ⓒ 2021.Jang Seo Ryeong. All rights reserved.
-        </div> -->
+        <main class="content">
+            <div id="theme">
+                <input id="themeColor" type="button" value="dark" onclick="darkModeHandler(this);">
+            </div>
+            <article class="newsBox">
+                H1GHR MUSIC 소속의 아티스트. 예명의 유래는 유학 시절 본인의 한국 이름인 권민식을 영어로 'Min Sik Kwon' 쓴 것에서 'Sik-K'를 따온 것이다.YELOWS MOB 크루 소속이며, 2013년 쇼미더머니2, 2015년 쇼미더머니4 출연 경력이 있다. 쇼미더머니2 출연 당시 D.O크루를 희망했으나 선택받지 못하고 탈락했고 쇼미더머니4 출연 당시 팀 AOMG 소속이었으나 팀 디스배틀 이후에 탈락했다. 박재범과는 계속 연락을 주고받는 사이인 것으로 보인다. 이후 박재범이 설립한 H1GHR MUSIC에 들어갔다.
+                랩과 보컬이 둘 다 가능한 뮤지션이다. 다만 인터뷰에서 보컬을 더 좋아한다고 밝혔다. 그래서 발매하는 음악은 주로 노래와 랩이 섞인 싱잉랩이 대부분이다.
+            </article>
+        </main>
+        <footer>
+            <p>Developer: Jang Seo Ryeong, Email: <a id="email" href="mailto:fallinta2@gmail.com">fallinta2@gmail.com</a> <br>
+                Copyright ⓒ 2021.Jang Seo Ryeong. All rights reserved.</p>
+        </footer>
+        <script src="./js/menu.js"></script>
         <script src="../main.js"></script>
     </body>
 </html>

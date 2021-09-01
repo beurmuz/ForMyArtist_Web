@@ -11,19 +11,4 @@
         downBar.classList.toggle('active');
     });
 
-    // iconSoundCld.addEventListener('click', () => {
-    //     window.open('https://soundcloud.com/younghotyellow');
-    // });
-
-    iconTwitter.addEventListener('click', () => {
-        window.open('https://twitter.com/younghotyellow');
-    });
-
-    iconInstagram.addEventListener('click', () => {
-        window.open('https://instagram.com/younghotyellow94');
-    });
-
-    iconFacebook.addEventListener('click', () => {
-        window.open('https://www.facebook.com/younghotyellow94official');
-    });
 })();

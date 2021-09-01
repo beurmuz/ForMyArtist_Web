@@ -45,3 +45,14 @@ h1 {
 #themeColor {
     font-family: 'Andada', serif;
 }
+
+.content {
+    border-top: 2px solid white;
+}
+
+.newsBox {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 12px;
+    line-height: 30px;
+    padding: 50px;
+}
