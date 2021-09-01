@@ -6,6 +6,7 @@
         <link rel="shortcut icon" type="image/x-icon" href="./images/yamma.ico">
         <link rel="stylesheet" type="text/css" href="../style.css">
         <link rel="stylesheet" type="text/css" href="./css/menu.css">
+        <link rel="stylesheet" type="text/css" href="./menustyle.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,10 +40,15 @@
                 <li class="down" id="down-4"><a href="./news.html">News</a></li>
             </ul>
         </nav>
-        <div class="devInfo">
-            Developer: Jang Seo Ryeong, Email: fallinta2@gmail.com <br>
-            Copyright ⓒ 2021.Jang Seo Ryeong. All rights reserved.
-        </div>
-        <script src="../main.js"></script>
+        <main>
+            <div id="theme">
+                <input id="themeColor" type="button" value="dark" onclick="darkModeHandler(this);">
+            </div>
+        </main>
+        <footer>
+            <p>Developer: Jang Seo Ryeong, Email: <a id="email" href="mailto:fallinta2@gmail.com">fallinta2@gmail.com</a> <br>
+                Copyright ⓒ 2021.Jang Seo Ryeong. All rights reserved.</p>
+        </footer>
+        <script src="./js/menu.js"></script>
     </body>
 </html>
