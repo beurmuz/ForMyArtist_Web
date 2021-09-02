@@ -4,6 +4,8 @@
 body {
     margin: 0;
     font-family: 'Andada', serif;
+    /* 화면 부드럽게 전환하는 애니메이션 */
+    -webkit-animation: fadein 1.5s;
 }
 
 /* 상단바 */
@@ -165,5 +167,15 @@ iframe {
     iframe {
         width:100%;
         height: 50vh;
+    }
+}
+
+/* 화면 부드럽게 전환하는 애니메이션 */
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
     }
 }

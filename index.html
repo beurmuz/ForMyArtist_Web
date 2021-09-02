@@ -60,13 +60,18 @@
         </footer>
         <script src="./main.js"></script>
         <script>
-            function fetchPage(name) {
-                fetch(name).then(function(response) {
+            // function fetchPage(name) {
+                fetch('./src/Data/base').then(function(response) {
                     response.text().then(function(text) {
                         document.querySelector('main').innerHTML = text;
                     })
                 });
-            }
+            // }
+            fetch('./src/Data/base').then(function(response) {
+                    response.text().then(function(text) {
+                        document.querySelector('main').innerHTML = text;
+                    })
+                });
         </script>
     </body>
 </html>
