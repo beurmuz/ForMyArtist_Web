@@ -16,7 +16,6 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'G-WNQJMPCTZB');
         </script>
     </head>
@@ -38,24 +37,36 @@
                 <li class="icon_youtube"><a href="https://www.youtube.com/watch?v=YKdZvLaqEOk&list=PLN2__r66ZoiszUc56AK7ROH-YCWcXyxQB" target="_blank"><i class="fab fa-youtube"></i></a></li>
             </ul>
         </nav>
+
         <!-- 토글 클릭 시 메뉴 -->
         <nav class="downbar">
             <ul class="downbar_All">
-                <li class="down" id="down-1"><a href="./src/introduce.html">Introduce</a></li>
-                <li class="down" id="down-2"><a href="./src/songs.html">Songs</a></li>
-                <li class="down" id="down-3"><a href="./src/albums.html">Albums</a></li>
-                <li class="down" id="down-4"><a href="./src/videoPage.html">Video</a></li>
+                <li class="down" id="down-1"><a href="./src/html/introduce.html">Introduce</a></li>
+                <li class="down" id="down-2"><a href="./src/html/songs.html">Songs</a></li>
+                <li class="down" id="down-3"><a href="./src/html/albums.html">Albums</a></li>
+                <li class="down" id="down-4"><a href="./src/html/videoPage.html">Video</a></li>
             </ul>
         </nav>
 
+        <!-- 메인 내용 -->
         <main>
-            <img class="img_home" src="./images/img_01.jpg">
+            <!-- <img class="img_home" src="./images/img_01.jpg"> -->
         </main>
         
+        <!-- 개발자 정보  -->
         <footer>
             <p>Developer: Jang Seo Ryeong, Email: <a id="email" href="mailto:fallinta2@gmail.com">fallinta2@gmail.com</a> <br>
                 Copyright ⓒ 2021.Jang Seo Ryeong. All rights reserved.</p>
         </footer>
         <script src="./main.js"></script>
+        <script>
+            function fetchPage(name) {
+                fetch(name).then(function(response) {
+                    response.text().then(function(text) {
+                        document.querySelector('main').innerHTML = text;
+                    })
+                });
+            }
+        </script>
     </body>
 </html>

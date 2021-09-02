@@ -10,5 +10,5 @@
 ## tech stack
 - HTML
 - CSS
-- JavaScript
-- vue.js
+- Vanilla JavaScript
+- AJAX

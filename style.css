@@ -1,18 +1,19 @@
 .js #fouc {display: none}
 
+/* 기본 바디 */
 body {
     margin: 0;
     font-family: 'Andada', serif;
 }
 
+/* 상단바 */
 a { text-decoration: none; }
 a:link { color: white; }
 a:visited { color: white; }
 
-#email {
-    color: gray;
-}
 
+
+/* navbar, 즉 상단바 관련 */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -52,7 +53,7 @@ a:visited { color: white; }
     cursor: pointer;
 }
 
-
+/* 토글 클릭 시 오픈되는 메뉴 */
 .downbar {
     background-color: rgb(31, 31, 31);
     font-size: 14px;
@@ -79,6 +80,23 @@ a:visited { color: white; }
 
 .down:hover { background-color: rgb(77, 77, 77); }
 
+
+/* index.html 파일 속 맨 아래 footer태그 */
+footer {
+    font-family: 'Nanum Gothic', sans-serif;
+    color: gray;
+    text-align: center;
+    font-size: 10px;
+    padding: 30px;
+}
+
+#email {
+    color: gray;
+}
+
+/* ----------------------------------------------------------------- */
+
+/* ?? */
 #IntroMenu {
     font-family: 'Nanum Gothic', sans-serif;
     display: flex;
@@ -101,6 +119,7 @@ a:visited { color: white; }
     align-items: center;
 }
 
+/* songs.html 파일 태그인듯 */
 .ablumImg {
     flex: 1;
 }
@@ -127,18 +146,15 @@ h3 {
 #menu-3 { background-color: rgb(255, 112, 136); }
 #menu-4 { background-color: rgb(255, 81, 110); }
 
-footer {
-    font-family: 'Nanum Gothic', sans-serif;
-    color: gray;
-    text-align: center;
-    font-size: 10px;
-    padding: 30px;
-}
 
+
+
+/* index.html 파일 속 main 이미지 */
 .img_home {
     width: 100%;
 }
 
+/* 동영상 태그(video.html 파일꺼) */
 iframe {
     width: 75%;
     height: 600px;
