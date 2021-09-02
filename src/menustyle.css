@@ -4,8 +4,12 @@ h1 {
     text-align: center;
 }
 
+.art1Box {
+    padding: 50px 0px;
+}
+
 .scrollImg {
-    font-family: 'Andada', serif;
+    padding-bottom: 7px;
     display: flex;
     flex-direction: row-reverse;
     white-space: nowrap; /* 연속 공백을 하나로 합침 */
@@ -24,11 +28,13 @@ h1 {
 }
 
 .songsBox {
-    height: 500px;
-    background-color: lightgray;
-    opacity: 0.5;
+    padding: 30px;
+    border: 3px solid darkgray;
+    color: darkgray;
+    height: 200px;
     display: none;
 }
+
 
 #theme {
     display: flex;
