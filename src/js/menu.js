@@ -11,3 +11,11 @@ function darkModeHandler(self) {
         self.value = 'dark';
     } 
 } 
+
+const scrollImg = document.querySelector('.scrollImg');
+const songBox = document.querySelector('.songsBox');
+
+scrollImg.addEventListener('mousedown', (e) => {
+    console.log("이미지 클릭");
+    songBox.style.display = 'block';
+});
