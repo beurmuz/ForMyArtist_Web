@@ -1,0 +1,26 @@
+<main id="IntroMenu">
+            <div id="menu-1" class="MenuBox">
+                <div class="ablumImg">
+                    <img src="../images/ab_10.jpg">
+                </div>
+                <div class="ablumList">
+                    <h3>HEADLINER (Deluxe)</h3>
+                    <p> 식케이 2020.6.27 랩/힙합 </p>
+                    <ol class="olEmpty">
+                        <li class="musicList">HEADLINER STR8BARS(Big Celebration)</li>
+                        <li class="musicList">RSVP</li>
+                        <li class="musicList">UNO GOTTA RUN</li>
+                        <li class="musicList">겁쟁이 (NEED HER)</li>
+                        <li class="musicList">헤이러(HATER) (Feat.김하온 (HAON)</li>
+                        <li class="musicList">JOE</li>
+                    </ol>
+                </div>
+                <!-- <div class="lyricsOpen">
+                    <input type="text" placeholder="가사를 입력하세여">
+                    가사보기
+                </div> -->
+            </div>
+            <div id="menu-2" class="MenuBox">B</div>
+            <div id="menu-3" class="MenuBox">C</div>
+            <div id="menu-4" class="MenuBox">D</div>
+        </main>

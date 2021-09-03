@@ -5,6 +5,7 @@
         <title>Sik-K</title>
         <link rel="shortcut icon" type="image/x-icon" href="./images/yamma.ico">
         <link rel="stylesheet" type="text/css" href="./style.css">
+        <link rel="stylesheet" type="text/css" href="./src/css/menu.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Andada&family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
@@ -41,10 +42,19 @@
         <!-- 토글 클릭 시 메뉴 -->
         <nav class="downbar">
             <ul class="downbar_All">
-                <li class="down" id="down-1"><a href="./src/html/introduce.html">Introduce</a></li>
+                <!-- <li class="down" id="down-1"><a href="./src/html/introduce.html">Introduce</a></li>
                 <li class="down" id="down-2"><a href="./src/html/songs.html">Songs</a></li>
                 <li class="down" id="down-3"><a href="./src/html/albums.html">Albums</a></li>
-                <li class="down" id="down-4"><a href="./src/html/videoPage.html">Video</a></li>
+                <li class="down" id="down-4"><a href="./src/html/videoPage.html">Video</a></li> -->
+
+                <li class="down" id="down-1"><a href="#!introduce" onclick="fetchPage('./src/Data/introduce')">Introduce</a></li>
+                <li class="down" id="down-2"><a href="#!songs" onclick="fetchPage('./src/Data/songs')">Songs</a></li>
+                <li class="down" id="down-3"><a href="#!albums" onclick="fetchPage('./src/Data/albums')">Albums</a></li>
+                <li class="down" id="down-4"><a href="#!videoPage" onclick="fetchPage('./src/Data/videoPage')">Video</a></li>
+
+                <!-- <li><a href="#!html" onclick="fetchPage('html')">HTML</a></li>
+                <li><a href="#!css" onclick="fetchPage('css')">CSS</a></li>
+                <li><a href="#!javascript" onclick="fetchPage('javascript')">Javascript</a></li> -->
             </ul>
         </nav>
 
@@ -59,19 +69,31 @@
                 Copyright ⓒ 2021.Jang Seo Ryeong. All rights reserved.</p>
         </footer>
         <script src="./main.js"></script>
+
+
         <script>
-            // function fetchPage(name) {
-                fetch('./src/Data/base').then(function(response) {
-                    response.text().then(function(text) {
-                        document.querySelector('main').innerHTML = text;
-                    })
-                });
-            // }
-            fetch('./src/Data/base').then(function(response) {
-                    response.text().then(function(text) {
-                        document.querySelector('main').innerHTML = text;
-                    })
-                });
+            // // function fetchPage(name) {
+            //     fetch('./src/Data/base').then(function(response) {
+            //         response.text().then(function(text) {
+            //             document.querySelector('main').innerHTML = text;
+            //         })
+            //     });
+            // // }
+
+
+            function fetchPage(name) {
+            fetch(name).then(function(response) {
+                response.text().then(function(text) {
+                    document.querySelector('main').innerHTML = text;
+                })
+            });
+            }
+            if(location.hash) {
+            fetchPage(location.hash.substr(13));
+            } else {
+            fetchPage('./src/Data/base');
+            }
+
         </script>
     </body>
 </html>
