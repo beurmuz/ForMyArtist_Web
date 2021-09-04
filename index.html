@@ -51,10 +51,6 @@
                 <li class="down" id="down-2"><a href="#!songs" onclick="fetchPage('./src/Data/songs')">Songs</a></li>
                 <li class="down" id="down-3"><a href="#!albums" onclick="fetchPage('./src/Data/albums')">Albums</a></li>
                 <li class="down" id="down-4"><a href="#!videoPage" onclick="fetchPage('./src/Data/videoPage')">Video</a></li>
-
-                <!-- <li><a href="#!html" onclick="fetchPage('html')">HTML</a></li>
-                <li><a href="#!css" onclick="fetchPage('css')">CSS</a></li>
-                <li><a href="#!javascript" onclick="fetchPage('javascript')">Javascript</a></li> -->
             </ul>
         </nav>
 
@@ -72,15 +68,6 @@
 
 
         <script>
-            // // function fetchPage(name) {
-            //     fetch('./src/Data/base').then(function(response) {
-            //         response.text().then(function(text) {
-            //             document.querySelector('main').innerHTML = text;
-            //         })
-            //     });
-            // // }
-
-
             function fetchPage(name) {
             fetch(name).then(function(response) {
                 response.text().then(function(text) {
@@ -89,11 +76,10 @@
             });
             }
             if(location.hash) {
-            fetchPage(location.hash.substr(13));
+                fetchPage(location.hash.substr(13));
             } else {
-            fetchPage('./src/Data/base');
+                fetchPage('./src/Data/base');
             }
-
         </script>
     </body>
 </html>
