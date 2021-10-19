@@ -26,9 +26,8 @@ a:visited { color: white; }
 .navbar_menu { padding: 8px 12px; }
 
 .navbar_name {
-    font-size: 17px;
+    font-size: 1.2rem;
     text-align: center;
-    /* padding: 8px 12px; */
     padding-left: 80px;
 }
 
@@ -44,19 +43,19 @@ a:visited { color: white; }
 
 .navbar_icons li { padding: 4px 8px; }
 
-.icon_soundCld:hover, 
-.icon_twitter:hover, 
-.icon_instagram:hover,
-.icon_facebook:hover,
-.icon_youtube:hover {
+.icon_soundCld, 
+.icon_twitter, 
+.icon_instagram,
+.icon_facebook,
+.icon_youtube {
     cursor: pointer;
 }
 
 
 .downbar {
     background-color: rgb(31, 31, 31);
-    font-size: 14px;
-    color: white;
+    font-size: 1.2rem;
+    color: rgb(182, 171, 171);
     display: flex;
     width: 100%;
     /* border-top: 1px solid lightgray;  */
