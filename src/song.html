@@ -43,10 +43,13 @@
         <!-- 메인 화면 구현 -->
         <!-- <div id="wrapper"> -->
         <section class="searchSection">
-            <form class="searchBox" onsubmit="return false">
-                <input class="search se_input" type="text" placeholder="노래 제목을 입력하세요." title="노래 제목 검색란">
-                <button class="search se_btn" type="button" onclick="getSearchValue()">search</button>
-            </form>
+            <div class="searchBoxBorder">
+                <form class="searchBox" onsubmit="return false">
+                    <input class="search se_input" type="text" placeholder="노래 제목을 입력하세요." title="노래 제목 검색란">
+                    <button class="search se_btn" type="button" onclick="getSearchValue()">search</button>
+                </form>
+            </div>
+            
             <div class="searchResult">
                 
             </div>

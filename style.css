@@ -206,12 +206,17 @@ footer {
     background-color: beige;
 } */
 
+.searchBoxBorder {
+    padding: var(--base-space);
+}
+
 .searchBox {
     font-family: 'Nanum Gothic';
     font-size: 1em;
     display: flex;
     flex-direction: row;
     padding: var(--base-space);
+    border: 2px solid gray;
 }
 
 .search {
@@ -221,8 +226,7 @@ footer {
 
 .se_input {
     flex: 4;
-    height: 4.5vh;
-    border: 1px gray solid;
+    border: none;
     border-radius: none;
 }
 
@@ -232,7 +236,8 @@ footer {
 
 .se_btn {
     flex: 1;
-    border: 1px gray solid;
+    border: none;
+    background-color: lightgray;
     border-radius: none;
 }
 
