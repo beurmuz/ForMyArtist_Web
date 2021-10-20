@@ -223,6 +223,7 @@ footer {
     flex: 4;
     height: 4.5vh;
     border: 1px gray solid;
+    border-radius: none;
 }
 
 .se_input:focus {
@@ -232,6 +233,7 @@ footer {
 .se_btn {
     flex: 1;
     border: 1px gray solid;
+    border-radius: none;
 }
 
 .searchResult {
@@ -243,10 +245,16 @@ footer {
 @media screen and (max-width: 780px) {
     .se_input {
         flex: 3;
+        font-size: 1.2em;
     }
 
     .se_btn {
         flex: 1;
+        font-size: 1.2em;
+    }
+
+    .searchResult {
+        font-size: 1.2em;
     }
 
 }
