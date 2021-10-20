@@ -4,30 +4,24 @@
         <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
         <title>Sik-K</title>
         <link rel="shortcut icon" type="image/x-icon" href="./images/yamma.ico">
-        <link rel="stylesheet" type="text/css" href="./style.css">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Andada&family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/25c2514e6b.js" crossorigin="anonymous"></script>
-        
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-WNQJMPCTZB"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-WNQJMPCTZB');
-        </script>
+        <script src="../main.js" defer></script>
+        <script src="./js/songEvent.js" defer></script>
     </head>
     <body>
-        <!-- 상단 바 구현 -->
-        <nav class="navbar">
+         <!-- 상단 바 구현 -->
+         <nav class="navbar">
             <div class="navbar_menu">
                 <div class="navbar_toggleBtn"><i class="fas fa-bars"></i></div>
             </div>
 
             <div class="navbar_name">
-                <a href="./index.html">Sik-K</a>
+                <a href="../index.html">Sik-K</a>
             </div>
 
             <ul class="navbar_icons">
@@ -37,29 +31,36 @@
                 <li class="icon_youtube"><a href="https://www.youtube.com/watch?v=YKdZvLaqEOk&list=PLN2__r66ZoiszUc56AK7ROH-YCWcXyxQB" target="_blank"><i class="fab fa-youtube"></i></a></li>
             </ul>
         </nav>
-
         <!-- 토글 클릭 시 메뉴 -->
         <nav class="downbar">
             <ul class="downbar_All">
-                <li class="down" id="down-1"><a href="./src/introduce.html">Introduce</a></li>
-                <li class="down" id="down-2"><a href="./src/song.html">Songs</a></li>
-                <li class="down" id="down-3"><a href="./src/albums.html">Albums</a></li>
-                <li class="down" id="down-4"><a href="./src/videoPage.html">Video</a></li>
+                <li class="down" id="down-1"><a href="./introduce.html">Introduce</a></li>
+                <li class="down" id="down-2"><a href="./song.html">Songs</a></li>
+                <li class="down" id="down-3"><a href="./albums.html">Albums</a></li>
+                <li class="down" id="down-4"><a href="./videoPage.html">Video</a></li>
             </ul>
         </nav>
-
-        <main>
-            <div class="main_article">
-                <img class="img_main main01" src="./images/main07.jpg">
-                <img class="img_main main02" src="./images/main10.jpg">
-                <img class="img_main main03" src="./images/main11.jpg">
+        <!-- 메인 화면 구현 -->
+        <!-- <div id="wrapper"> -->
+        <section class="searchSection">
+            <form class="searchBox" onsubmit="return false">
+                <input class="search se_input" type="text" placeholder="노래 제목을 입력하세요." title="노래 제목 검색란">
+                <button class="search se_btn" type="button" onclick="getSearchValue()">search</button>
+            </form>
+            <div class="searchResult">
+                
             </div>
-        </main>
-        
+        </section>
+        <section class="songLists">
+            <ul class="items">
+
+            </ul>
+        </section>
+
+        <!-- 개발자 정보 -->
         <footer>
             <p>Developer: Jang Seo Ryeong, Email: <a id="email" href="mailto:fallinta2@gmail.com">fallinta2@gmail.com</a> <br>
                 Copyright ⓒ 2021.Jang Seo Ryeong. All rights reserved.</p>
         </footer>
-        <script src="./main.js"></script>
     </body>
 </html>

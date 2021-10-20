@@ -5,7 +5,6 @@
         <title>Sik-K</title>
         <link rel="shortcut icon" type="image/x-icon" href="./images/yamma.ico">
         <link rel="stylesheet" type="text/css" href="../style.css">
-        <link rel="stylesheet" type="text/css" href="./css/menu.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,52 +23,54 @@
             </div>
 
             <ul class="navbar_icons">
-                <li class="icon_soundCld"><a href="https://soundcloud.com/younghotyellow" target="_blank"><i class="fab fa-soundcloud"></i></a></li>
-                <li class="icon_twitter"><a href="https://twitter.com/younghotyellow" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                <li class="icon_instagram"><a href="https://instagram.com/younghotyellow94" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                <li class="icon_youtube"><a href="https://www.youtube.com/watch?v=YKdZvLaqEOk&list=PLN2__r66ZoiszUc56AK7ROH-YCWcXyxQB" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                <li class="icon_soundCld"><i class="fab fa-soundcloud"></i></li>
+                <li class="icon_twitter"><i class="fab fa-twitter"></i></li>
+                <li class="icon_instagram"><i class="fab fa-instagram"></i></li>
+                <li class="icon_facebook"><i class="fab fa-facebook"></i></li>
             </ul>
         </nav>
         <!-- 토글 클릭 시 메뉴 -->
         <nav class="downbar">
             <ul class="downbar_All">
                 <li class="down" id="down-1"><a href="./introduce.html">Introduce</a></li>
-                <li class="down" id="down-2"><a href="./songs.html">Songs</a></li>
+                <li class="down" id="down-2"><a href="./song.html">Songs</a></li>
                 <li class="down" id="down-3"><a href="./albums.html">Albums</a></li>
-                <li class="down" id="down-4"><a href="./videoPage.html">Video</a></li>
+                <li class="down" id="down-4"><a href="./videoPage.html">News</a></li>
             </ul>
         </nav>
-        <!-- 메인 화면 구현 -->
-        <div id="IntroMenu">
-            <div id="menu-1" class="MenuBox">
-                <div class="ablumImg">
-                    <img src="../images/ab_10.jpg">
+        <main>
+            <div class="art1Box">
+                <div class="scrollImg">
+                    <div class="abImgBox">
+                        <img src="../images/ab_01.jpg" class="abImg">
+                        <img src="../images/ab_02.jpg" class="abImg">
+                        <img src="../images/ab_03.jpg" class="abImg">
+                        <img src="../images/ab_04.jpg" class="abImg">
+                        <img src="../images/ab_05.jpg" class="abImg">
+                        <img src="../images/ab_06.jpg" class="abImg">
+                        <img src="../images/ab_07.jpg" class="abImg">
+                        <img src="../images/ab_08.jpg" class="abImg">
+                        <img src="../images/ab_09.jpg" class="abImg">
+                        <img src="../images/ab_10.jpg" class="abImg">
+                        <img src="../images/ab_11.jpg" class="abImg">
+                        <img src="../images/ab_12.jpg" class="abImg">
+                        <img src="../images/ab_13.jpg" class="abImg">
+                        <img src="../images/ab_14.jpg" class="abImg">
+                        <img src="../images/ab_15.jpg" class="abImg">
+                    </div>
                 </div>
-                <div class="ablumList">
-                    <h3>HEADLINER (Deluxe)</h3>
-                    <p> 식케이 2020.6.27 랩/힙합 </p>
-                    <ol class="olEmpty">
-                        <li class="musicList">HEADLINER STR8BARS(Big Celebration)</li>
-                        <li class="musicList">RSVP</li>
-                        <li class="musicList">UNO GOTTA RUN</li>
-                        <li class="musicList">겁쟁이 (NEED HER)</li>
-                        <li class="musicList">헤이러(HATER) (Feat.김하온 (HAON)</li>
-                        <li class="musicList">JOE</li>
-                    </ol>
-                </div>
-                <!-- <div class="lyricsOpen">
-                    <input type="text" placeholder="가사를 입력하세여">
-                    가사보기
-                </div> -->
             </div>
-            <div id="menu-2" class="MenuBox">B</div>
-            <div id="menu-3" class="MenuBox">C</div>
-            <div id="menu-4" class="MenuBox">D</div>
-        </div>
+            <article>
+                <div class="songsBox">
+                    앨범 소개 내용
+                </div>
+            </article>
+        </main>
         <footer>
             <p>Developer: Jang Seo Ryeong, Email: <a id="email" href="mailto:fallinta2@gmail.com">fallinta2@gmail.com</a> <br>
                 Copyright ⓒ 2021.Jang Seo Ryeong. All rights reserved.</p>
         </footer>
         <script src="../main.js"></script>
+        <script src="./js/menu.js"></script>
     </body>
 </html>
