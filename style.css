@@ -15,9 +15,6 @@ a { text-decoration: none; }
 a:link { color: white; }
 a:visited { color: white; }
 
-#email {
-    color: gray;
-}
 
 /* menu bar */
 .navbar {
@@ -101,13 +98,54 @@ a:visited { color: white; }
 
 .down:hover { background-color: rgb(77, 77, 77); }
 
-@media screen and (max-width: 780px) {
-    /* .navbar_name {
-    } */
+/* main */
+.main_article {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
 
+.img_main {
+    flex: 1;
+    width: 300px;
+}
+
+.main01:hover,
+.main02:hover,
+.main03:hover {
+    opacity:0.7;
+    cursor: pointer;
+}
+
+/* 개발자 정보 */
+#email {
+    color: gray;
+}
+
+footer {
+    font-family: 'Nanum Gothic', sans-serif;
+    color: gray;
+    text-align: center;
+    font-size: 10px;
+    padding: 30px;
+}
+
+@media screen and (max-width: 780px) {
     .down {
-        font-size: 2em;
+        font-size: 1.2em;
     }
+
+    .main_article {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .img_main {
+        flex: 1;
+        width: 100%;
+    }
+
 }
 
 /* introduce 페이지 */
@@ -158,18 +196,6 @@ h3 {
 #menu-2 { background-color: rgb(255, 163, 179); }
 #menu-3 { background-color: rgb(255, 112, 136); }
 #menu-4 { background-color: rgb(255, 81, 110); }
-
-footer {
-    font-family: 'Nanum Gothic', sans-serif;
-    color: gray;
-    text-align: center;
-    font-size: 10px;
-    padding: 30px;
-}
-
-.img_home {
-    width: 100%;
-}
 
 iframe {
     width: 75%;
