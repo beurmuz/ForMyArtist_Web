@@ -8,6 +8,7 @@
 body {
     margin: 0;
     font-family: 'Andada', serif;
+    animation: fadein 3s;
 }
 
 a { text-decoration: none; }
@@ -99,15 +100,16 @@ a:visited { color: white; }
 
 /* main */
 .main_article {
-    animation: fadein 1s;
+    /* animation: fadein 3s; */
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
+
 @keyframes fadein {
     from {
-        opacity: 0.5;
+        opacity: 0.0;
     }
     to {
         opacity: 1;
@@ -374,7 +376,7 @@ h1 {
 }
 
 .abImg {
-    width: 30vw;
+    width: 40vw;
 }
 
 .songsBox {
@@ -385,6 +387,11 @@ h1 {
     display: none;
 }
 
+@media screen and (max-width: 700px) {
+    .abImg {
+        width: 80vw;
+    }
+}
 
 /* videoPage 페이지 */
 
