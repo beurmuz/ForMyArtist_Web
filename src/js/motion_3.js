@@ -1,5 +1,3 @@
-
-
 var prev_button, next_button;
 var diskBox;
 var disk_inner;

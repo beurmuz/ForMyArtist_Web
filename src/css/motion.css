@@ -141,9 +141,18 @@ body {
           transition-delay: 0s;
 }
 
+/* 앨범 정보 (앨범이름, 발매일, 리스트) */
+.albumInfo {
+  /* display: block;
+  position: absolute;
+  top: 150%; */
+  visibility: hidden;
+}
+
+
 .moveBox {
-  position: fixed;
-  bottom: 10vh;
+  position: absolute;
+  bottom: 8vh;
   text-align: center;
   width: 100%;
 }
