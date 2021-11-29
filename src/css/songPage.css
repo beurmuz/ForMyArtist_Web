@@ -1,0 +1,141 @@
+@import url(./reset.css);
+@import url(./allPages.css);
+
+/* song 페이지 */
+
+:root {
+    /* padding */
+    --base-space: 8px;
+    --image-size: 50px;
+  }
+  
+/* song 페이지 - 검색창 구현 */
+.searchBoxBorder {
+    padding: var(--base-space);
+}
+
+.searchBox {
+    font-family: 'Nanum Gothic';
+    font-size: 1em;
+    display: flex;
+    flex-direction: row;
+    padding: var(--base-space);
+    border: 1px solid gray;
+}
+
+.search {
+    width: 100%;
+    height: 4vh;
+}
+
+.se_input {
+    flex: 4;
+    border: none;
+    border-radius: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.se_input:focus {
+    outline: none;
+}
+
+.se_btn {
+    flex: 1;
+    border: none;
+    background-color: lightgray;
+    border-radius: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.searchResult {
+    font-family: 'Nanum Gothic';
+    font-size: 1em;
+    margin: var(--base-space);
+}
+
+/* song 페이지 검색 결과란 구현 */
+.songsLists-border {
+    font-family: 'Nanum Gothic';
+    display: flex;
+    flex-direction: column;
+}
+
+.songsLists-box {
+    text-align: center;
+    padding: var(--base-space);
+    /* background-color: red; */
+}
+
+.resetList-btn {
+    font-size: 1em;
+    background-color: white;
+    border: none;
+}
+
+.songLists {
+    font-size: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0px var(--base-space);
+}
+
+.fa-compact-disc {
+    font-size: 2em;
+}
+
+.items {
+    width: 100%;
+    height: 50vh;
+    list-style: none;
+    padding: var(--base-space);
+    overflow-y: scroll;
+    background-color: rgb(228, 228, 228);
+}
+  
+.item {
+    /* background-color: pink; */
+    border-bottom: 1px solid white;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    padding: var(--base-space);
+    margin-bottom: var(--base-space);
+}
+
+.item:hover {
+    background-color: white;
+    cursor: pointer;
+}
+  
+.item.invisible {
+    background-color: white;
+    display: none;
+}
+  
+.item__description {
+    margin-left: var(--base-space);
+    font-size: var(--font-size);
+}
+
+@media screen and (max-width: 780px) {
+    .se_input {
+        flex: 3;
+        font-size: 1.2em;
+    }
+
+    .se_btn {
+        flex: 1;
+        font-size: 1.2em;
+    }
+
+    .searchResult {
+        font-size: 1.2em;
+    }
+
+    .resetList-btn {
+        font-size: 1.1em;
+    }
+}

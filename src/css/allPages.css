@@ -1,0 +1,111 @@
+:root {
+  /* padding */
+  --base-space: 8px;
+  --image-size: 50px;
+}
+
+body {
+  animation: fadein 3s;
+}
+
+@keyframes fadein {
+  from {
+      opacity: 0.0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+/* menu */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding-left: var(--base-space);
+  padding-right: var(--base-space);
+  height: 10vh;
+}
+
+.navbar_menu { padding: var(--base-space) 12px; }
+
+.navbar_name {
+  font-size: 1.2em;
+  text-align: center;
+  padding-left: calc(var(--base-space)*10);
+  cursor: pointer;
+}
+
+.navbar_toggleBtn { 
+  cursor: pointer; 
+  font-size: 1.2em;
+}
+
+.navbar_icons {
+  display: flex;
+  padding: 0px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.icon_soundCld, 
+.icon_twitter, 
+.icon_instagram,
+.icon_youtube {
+  transition: transform 400ms;
+}
+
+.icon_soundCld:hover,
+.icon_twitter:hover, 
+.icon_instagram:hover,
+.icon_facebook:hover,
+.icon_youtube:hover {
+  transform: scale(1.2);
+}
+
+.navbar_icons li { padding: 4px 8px; }
+
+.downbar {
+  background-color: rgb(31, 31, 31);
+  font-size: 1em;
+  color: rgb(226, 226, 226);
+  display: flex;
+  width: 100%;
+  display: none;
+}
+
+.downbar.active { display:block; }
+
+.downbar_All {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.down {
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  list-style: none;
+  padding: 15px 14px;
+  margin-left: 0;
+  height: 5vh
+}
+
+.down:hover { background-color: rgb(77, 77, 77); }
+
+/* footer */
+#email {
+  color: gray;
+}
+
+footer {
+  font-family: 'Nanum Gothic', sans-serif;
+  color: gray;
+  text-align: center;
+  font-size: 10px;
+  padding: 30px;
+}

@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    font-family: 'Andada', serif;
+    animation: fadein 3s;
+}
+
+article, aside, details, figure, footer, header, main, menu, nav, section {
+    display: block;
+}
+
+a { text-decoration: none; }
+a:link { color: white; }
+a:visited { color: white; }
+
+li {
+    list-style: none;
+}
+  /* audio:not([controls]) {
+    display: none;
+    height: 0;
+  }
+  
+  [hidden],
+  template {
+    display: none;
+  }
+  
+  a {
+    background-color: transparent;
+  }
+  
+  a:active,
+  a:hover {
+    outline: 0;
+  }
+  
+  img {
+    border: 0;
+  }
+  
+  svg:not(:root) {
+    overflow: hidden;
+  }
+  
+  button {
+    overflow: visible;
+    border : 0;
+  }
+  
+  button,
+  select {
+    text-transform: none;
+  }
+  
+  button[disabled],
+  html input[disabled] {
+    cursor: default;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+
+  input {
+    line-height: normal;
+  }
+  
+  
+  textarea {
+    overflow: auto;
+  }
+  
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  td,
+  th {
+    padding: 0;
+  } */
