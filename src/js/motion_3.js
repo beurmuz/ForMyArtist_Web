@@ -1,7 +1,7 @@
 
 
 var prev_button, next_button;
-var contentWrap;
+var diskBox;
 var disk_inner;
 var pageNum = 0;
 var totalNum = 0;
@@ -16,10 +16,10 @@ window.onload = function(){
     prev_button = document.querySelectorAll("button")[0];
     next_button = document.querySelectorAll("button")[1];
     
-    contentWrap = document.querySelector(".contentWrap");
+    diskBox = document.querySelector(".diskBox");
     disk_inner = document.querySelectorAll(".disk_inner");
     album = document.querySelectorAll(".album");
-    pointBtnAll = document.querySelectorAll(".pointWrap li");
+    pointBtnAll = document.querySelectorAll(".pointBox li");
     totalNum = album.length;
 
     prev_button.addEventListener("click", function(){
@@ -58,7 +58,7 @@ window.onload = function(){
 //여기서 모든 것을 한다.
 function pageChangeFunc(){
 
-    contentWrap.style.background = "linear-gradient(120deg,"+ bgArray[pageNum][0] +", "+ bgArray[pageNum][1] + ")";
+    diskBox.style.background = "linear-gradient(120deg,"+ bgArray[pageNum][0] +", "+ bgArray[pageNum][1] + ")";
 
     for(var i=0; i<totalNum; i++){
         if(pageNum == i){

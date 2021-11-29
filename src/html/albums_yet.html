@@ -1,23 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" http-equiv="Content-Type" content="text/html;">
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
         <title>Sik-K</title>
         <link rel="shortcut icon" type="image/x-icon" href="../images/yamma.ico">
-        <link rel="stylesheet" type="text/css" href="../css/songPage.css">
+        <link rel="stylesheet" type="text/css" href="../css/albumsPage.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Andada&family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/25c2514e6b.js" crossorigin="anonymous"></script>
         <script src="../js/main.js" defer></script>
-        <script src="./js/songEvent.js" defer></script>
-
-
-        <link rel="stylesheet" type="text/css" href="../css/motion.css" />
-        <script type="text/javascript" src="../js/motion_3.js"></script>
-        </head>
-        <body>
+    </head>
+    <body>
          <!-- 상단 바 구현 -->
          <nav class="navbar">
             <div class="navbar_menu">
@@ -44,49 +39,38 @@
                 <li class="down" id="down-4"><a href="./videoPage.html">Video</a></li>
             </ul>
         </nav>
-        <!-- 메인 화면 구현 -->
-        <article class="contentWrap">
-            <section class="album">
-              <div class="disk">
-                <div class="disk_inner"></div>
-              </div>
-              <a href="" target="blank" class="coverImg">
-                <img src="../../images/ab_10.jpg" alt="">
-              </a>
-            </section>
-        
-            <section class="album">
-              <div class="disk">
-                <div class="disk_inner"></div>
-              </div>
-              <a href=""  target="blank" class="coverImg">
-                <img src="../../images/ab_16.jpg" alt="">
-              </a>
-            </section>
-        
-            <section class="album">
-              <div class="disk">
-                <div class="disk_inner"></div>
-              </div>
-              <a href=""  target="blank" class="coverImg">
-                <img src="../../images/ab_17.jpg" alt="">
-              </a>
-            </section>
-        
-          </article>
-          <div class="buttonWrap">
-            <button type="button">이전</button>
-            <ul class="pointWrap">
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-            <button type="button">이후</button>
-          </div>
-        <!-- 개발자 정보 -->
+        <main>
+            <div class="art1Box">
+                <div class="scrollImg">
+                    <div class="abImgBox">
+                        <img src="../../images/ab_01.jpg" class="abImg">
+                        <img src="../../images/ab_02.jpg" class="abImg">
+                        <img src="../../images/ab_03.jpg" class="abImg">
+                        <img src="../../images/ab_04.jpg" class="abImg">
+                        <img src="../../images/ab_05.jpg" class="abImg">
+                        <img src="../../images/ab_06.jpg" class="abImg">
+                        <img src="../../images/ab_07.jpg" class="abImg">
+                        <img src="../../images/ab_08.jpg" class="abImg">
+                        <img src="../../images/ab_09.jpg" class="abImg">
+                        <img src="../../images/ab_10.jpg" class="abImg">
+                        <img src="../../images/ab_11.jpg" class="abImg">
+                        <img src="../../images/ab_12.jpg" class="abImg">
+                        <img src="../../images/ab_13.jpg" class="abImg">
+                        <img src="../../images/ab_14.jpg" class="abImg">
+                        <img src="../../images/ab_15.jpg" class="abImg">
+                    </div>
+                </div>
+            </div>
+            <article>
+                <div class="songsBox">
+                    앨범 소개 내용
+                </div>
+            </article>
+        </main>
         <footer>
             <p>Developer: Jang Seo Ryeong, Email: <a id="email" href="mailto:fallinta2@gmail.com">fallinta2@gmail.com</a> <br>
                 Copyright ⓒ 2021.Jang Seo Ryeong. All rights reserved.</p>
         </footer>
+        <script src="../js/album.js"></script>
     </body>
 </html>
