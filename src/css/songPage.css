@@ -3,6 +3,14 @@
 
 /* song 페이지 */
 
+body {
+    background-image: url('../../images/bg.jpg');
+    height: 100vh;
+    background-repeat : no-repeat;
+    background-size : cover;
+    /* animation: none; */
+}
+
 :root {
     /* padding */
     --base-space: 8px;
@@ -13,6 +21,12 @@
 .searchBoxBorder {
     padding: var(--base-space);
 }
+
+.wrapper {
+    padding: 0 150px;
+    padding-top: 14vh;
+}
+
 
 .searchBox {
     font-family: 'Nanum Gothic';
