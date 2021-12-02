@@ -152,4 +152,9 @@ body {
     .resetList-btn {
         font-size: 1.1em;
     }
+
+    .wrapper {
+        padding: 0 20px;
+        padding-top: 14vh;
+    }
 }
