@@ -9,7 +9,7 @@ main {
 
 .liner {
     position: fixed;
-    left: 22.5%;
+    left: 20%;
     border-right: 1px dashed darkgray;
     height: 100vh;
     z-index: 1;
@@ -18,23 +18,22 @@ main {
 .pointWrap {
     position: fixed;
     right: 3vw;
-    top: 40%;
+    top: 35%;
     z-index: 100;
 }
   
 .pointWrap li {
     list-style: none;
-    width: 12px;
-    height: 12px;
-    margin-top: 15px;
+    font-size: 20px;
+    color: antiquewhite;
+    margin-top: 10px;
     cursor: pointer;
-    background-color: #999;
     border-radius: 50%;
     transition: background .3s ease-out;
 }
   
 .pointWrap li.active {
-    background-color: #000;
+    color: rgb(255, 149, 215)
 }
 
 section {
@@ -46,7 +45,7 @@ section {
 }
 
 .imageWrap {
-    width: 45%;
+    width: 40%;
 }
 
 .imageWrap img {
@@ -60,18 +59,18 @@ section {
     font-family: 'Nanum Gothic', sans-serif;
     font-size: 12px;
     color: rgb(255, 255, 255);
-    width: 55%;
+    width: 60%;
     background-color: black;
     /* transition: all 1s ease-out; */
 }
 
 .textWrap h2 {
     font-size: 2em;
-    padding-right: 70px;
+    padding-right: 100px;
 }
 
 .textWrap p {
-    padding-right: 70px;
+    padding-right: 100px;
     line-height: 30px;
     font-size: 15px;
 }
@@ -93,11 +92,11 @@ footer {
     }
 
     .imageWrap {
-        margin-top: 200px;
         width: 100vw;
     }
     .imageWrap img{
-        width: 70vw;
+        margin-top: 20vh;
+        width: 50vw;
     }
 
     .textWrap {
