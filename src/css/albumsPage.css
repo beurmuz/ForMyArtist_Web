@@ -1,46 +1,220 @@
 @import url(./reset.css);
 @import url(./allPages.css);
 
-/* albums 페이지 */
-h1 {
-    font-family: 'Andada', serif;
-    width: 100%;
-    text-align: center;
+body {
+  font-size: 16px;
+  background-image: url('../../images/bg.jpg');
+  height: 100vh;
+  background-repeat : no-repeat;
+  background-size : cover;
 }
 
-.art1Box {
-    padding: 50px 0px;
+.diskBox {
+  width: 100vw;
+  height: 100vh;
+  
+  /* 모바일 */
+  touch-action: none;
+  touch-action: none;
 }
 
-.scrollImg {
-    padding-bottom: 7px;
-    display: flex;
-    flex-direction: row-reverse;
-    white-space: nowrap; /* 연속 공백을 하나로 합침 */
-    /* justify-content: flex-end; */
-    overflow: auto;
-    
+.album {
+  position: absolute;
+  top: 45%;
+  left: 55%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 600px;
+  height: 400px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
 }
 
-.abImg:hover {
-    cursor: pointer;
-    opacity: 0.5;
+.album.active {
+  visibility: visible;
+  opacity: 1;
+  left: 50%;
 }
 
-.abImg {
-    width: 40vw;
+.diskBox .album.active .disk {
+  left: 180px;
+  -webkit-transition-delay: .5s;
+          transition-delay: .5s;
 }
 
-.songsBox {
-    padding: 30px;
-    border: 3px solid darkgray;
-    color: darkgray;
+/* 반응형 만들기 */
+@media only screen and (max-width: 720px) {
+  .album {
+    top: 40%;
+    width: 300px;
     height: 200px;
-    display: none;
+  }
+
+  .album.active {
+    left: 45%;
+  }
+  .diskBox .album.active .disk {
+    left: 35%;
+    -webkit-transition-delay: .5s;
+            transition-delay: .5s;
+  }
 }
 
-@media screen and (max-width: 700px) {
-    .abImg {
-        width: 80vw;
-    }
+.coverImg {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  -webkit-box-shadow: 2px 14px 40px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 14px 40px rgba(0, 0, 0, 0.3);
+}
+
+.coverImg img {
+  width: inherit;
+  height: inherit;
+}
+
+.diskBox .album .disk {
+  position: absolute;
+  top: 4px;
+  left: 0px;
+  width: 392px;
+  height: 392px;
+  border-radius: 50%;
+  background: linear-gradient(120deg, #000, #333333, #000);
+  background: linear-gradient(120deg, rgb(136, 132, 132), #a3a3a3, rgb(255, 255, 255));
+  -webkit-box-shadow: 4px 14px 40px rgba(0, 0, 0, 0.3);
+          box-shadow: 4px 14px 40px rgba(0, 0, 0, 0.3);
+  -webkit-transition: left 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: left 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-animation: rotateAni 10s ease infinite;
+          animation: rotateAni 10s ease infinite;
+}
+
+@media only screen and (max-width: 720px) {
+  .coverImg {
+    width: 250px;
+    height: 250px;
+  }
+
+  .diskBox .album .disk {
+    width: 244px;
+    height: 244px;
+  }
+}
+
+.diskBox .album .disk .disk_inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 160px;
+  height: 160px;
+  background-color: #757575;
+  border-radius: 50%;
+  border: 3px dashed rgba(255, 255, 255, 0.4);
+}
+
+@media only screen and (max-width: 720px) {
+  .diskBox .album .disk .disk_inner {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.diskBox .album .disk .disk_inner::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 7px;
+  height: 7px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.diskBox .album:hover .disk {
+  left: 40%;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+/* 앨범 정보 (앨범이름, 발매일, 리스트) */
+.albumInfo {
+  /* display: block;
+  position: absolute;
+  top: 150%; */
+  visibility: hidden;
+}
+
+
+.moveBox {
+  position: absolute;
+  bottom: 8vh;
+  text-align: center;
+  width: 100%;
+}
+
+.moveBox button {
+  padding: 6px 25px;
+  margin: 0 2px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.moveBox button:hover {
+  background-color: lightgray;
+  color: #000;
+}
+
+.moveBox .pointBox {
+  /* position: relative; */
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.moveBox .pointBox li {
+  /* position: relative; */
+  display: inline-block;
+  font-size: 20px;
+  margin: 0 7px;
+  text-align: center;
+  cursor: pointer;
+  background-color: transparent;
+  color: rgb(185, 185, 185);
+  -webkit-transition: background .3s ease-out;
+  transition: background .3s ease-out;
+}
+
+.moveBox .pointBox li.active {
+  background-color: transparent;
+  color: rgb(255, 157, 206);
+}
+
+@-webkit-keyframes rotateAni {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateAni {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }

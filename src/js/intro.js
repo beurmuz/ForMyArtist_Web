@@ -15,7 +15,7 @@ for(let i = 0; i < dotBtn.length; i++) {
 }
 
 function dotBtnOnClick(index) {
-    dotBtn[index].onclick = function() {
+    dotBtn[index].onclick = () => {
         // console.log(index);
         pageNum = index;
         pageOnChange();

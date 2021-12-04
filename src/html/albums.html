@@ -4,18 +4,14 @@
         <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" http-equiv="Content-Type" content="text/html;">
         <title>Sik-K</title>
         <link rel="shortcut icon" type="image/x-icon" href="../../images/yamma.ico">
-        <link rel="stylesheet" type="text/css" href="../css/songPage.css">
+        <link rel="stylesheet" type="text/css" href="../css/albumsPage.css" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Andada&family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/25c2514e6b.js" crossorigin="anonymous"></script>
         <script src="../js/main.js" defer></script>
-        <script src="./js/songEvent.js" defer></script>
-
-
-        <link rel="stylesheet" type="text/css" href="../css/motion.css" />
-        <script type="text/javascript" src="../js/motion_3.js"></script>
+        <script src="../js/motion_3.js" defer></script>
         </head>
         <body>
          <!-- 상단 바 구현 -->
@@ -43,6 +39,7 @@
                 <li class="down" id="down-3"><a href="./albums.html">Albums</a></li>
             </ul>
         </nav>
+
         <!-- 메인 화면 구현 -->
         <article class="diskBox">
             <section class="album">
@@ -79,13 +76,13 @@
 
             <!-- 버튼 -->
             <div class="moveBox">
-              <button type="button">prev</button>
+              <button type="button" class="prev">prev</button>
               <ul class="pointBox">
                 <li>♥</li>
                 <li>♥</li>
                 <li>♥</li>
               </ul>
-              <button type="button">next</button>
+              <button type="button" class="next">next</button>
             </div>
           </article>
           

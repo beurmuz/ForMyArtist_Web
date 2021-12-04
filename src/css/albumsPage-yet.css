@@ -1,0 +1,46 @@
+@import url(./reset.css);
+@import url(./allPages.css);
+
+/* albums 페이지 */
+h1 {
+    font-family: 'Andada', serif;
+    width: 100%;
+    text-align: center;
+}
+
+.art1Box {
+    padding: 50px 0px;
+}
+
+.scrollImg {
+    padding-bottom: 7px;
+    display: flex;
+    flex-direction: row-reverse;
+    white-space: nowrap; /* 연속 공백을 하나로 합침 */
+    /* justify-content: flex-end; */
+    overflow: auto;
+    
+}
+
+.abImg:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.abImg {
+    width: 40vw;
+}
+
+.songsBox {
+    padding: 30px;
+    border: 3px solid darkgray;
+    color: darkgray;
+    height: 200px;
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    .abImg {
+        width: 80vw;
+    }
+}

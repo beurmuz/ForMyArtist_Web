@@ -1,66 +1,36 @@
-var prev_button, next_button;
-var diskBox;
-var disk_inner;
-var pageNum = 0;
-var totalNum = 0;
-var album;
-var pointBtnAll;
-var bgArray = new Array();
-bgArray[0] = ["#0272a4","#f6a564"];
-bgArray[1] = ["#b6bfc8","#36595b"];
-bgArray[2] = ["#e58e82","#6f569f"];
+let prevBtn = document.querySelector('.prev');
+let nextBtn = document.querySelector('.next');
+let diskBox = document.querySelector(".diskBox");
+let diskInner = document.querySelectorAll(".disk_inner");
+let album = document.querySelectorAll(".album");
+let pointBtnAll = document.querySelectorAll(".pointBox li");
 
-window.onload = function(){
-    prev_button = document.querySelectorAll("button")[0];
-    next_button = document.querySelectorAll("button")[1];
-    
-    diskBox = document.querySelector(".diskBox");
-    disk_inner = document.querySelectorAll(".disk_inner");
-    album = document.querySelectorAll(".album");
-    pointBtnAll = document.querySelectorAll(".pointBox li");
-    totalNum = album.length;
+let pageNum = 0;
+let totalNum = album.length;
 
-    prev_button.addEventListener("click", function(){
-        if(pageNum > 0){
-            pageNum --;
-        }else{
-            pageNum = totalNum -1;
-        }
-        pageChangeFunc();
-    })
-
-    next_button.addEventListener("click", function(){
-        if(pageNum < totalNum-1){
-            pageNum ++;
-        }else{
-            pageNum = 0;
-        }
-        pageChangeFunc();
-    })
-
-    for( var i = 0; i < pointBtnAll.length; i++ ){
-        (function(idx) {
-            pointBtnAll[idx].onclick = function() {
-                // alert(idx);
-                pageNum = idx;
-                pageChangeFunc();
-            }
-        })(i);
+prevBtn.addEventListener('click', () => {
+    if(pageNum > 0) {
+        pageNum--;
+    } else {
+        pageNum = totalNum - 1;
     }
-
-    //최초실행
-    // pageNum = 2;
     pageChangeFunc();
-}
+});
 
-//여기서 모든 것을 한다.
-function pageChangeFunc(){
+nextBtn.addEventListener('click', () => {
+    if(pageNum < totalNum-1){
+        pageNum ++;
+    }else{
+        pageNum = 0;
+    }
+    pageChangeFunc();
+});
 
-    diskBox.style.background = "linear-gradient(120deg,"+ bgArray[pageNum][0] +", "+ bgArray[pageNum][1] + ")";
+pageChangeFunc();
 
-    for(var i=0; i<totalNum; i++){
+function pageChangeFunc() {
+    for(let i = 0; i < totalNum; i++) {
         if(pageNum == i){
-            //현재 컨텐츠(페이지)
             album[i].classList.add("active");
             pointBtnAll[i].classList.add("active");
         }else{
@@ -68,8 +38,16 @@ function pageChangeFunc(){
             pointBtnAll[i].classList.remove("active");
         }
     }
-
-    disk_inner[pageNum].style.background = bgArray[pageNum][0];
 }
 
+// 하트 버튼을 누르면 해당 순서에 맞게 이동
+for(let i = 0; i < pointBtnAll.length; i++) {
+    heartBtnOnClick(i);
+}
 
+function heartBtnOnClick(index) {
+    pointBtnAll[index].onclick = () => {
+        pageNum = index;
+        pageChangeFunc();
+    }
+}
