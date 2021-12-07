@@ -2,13 +2,18 @@
 @import url(./allPages.css);
 
 /* song 페이지 */
-
 body {
+    /* overflow-y: hidden; */
+}
+
+.backgroundImg {
+    position: fixed;
+    z-index: 1;
     background-image: url('../../images/bg.jpg');
+    width: 100vw;
     height: 100vh;
     background-repeat : no-repeat;
     background-size : cover;
-    /* animation: none; */
 }
 
 :root {
@@ -23,6 +28,8 @@ body {
 }
 
 .wrapper {
+    position: relative;
+    z-index: 20;
     padding: 0 150px;
     padding-top: 14vh;
 }
@@ -132,6 +139,11 @@ body {
 .item__description {
     margin-left: var(--base-space);
     font-size: var(--font-size);
+}
+
+footer {
+    position: relative;
+    z-index: 20;
 }
 
 @media screen and (max-width: 780px) {
